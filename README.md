@@ -35,7 +35,7 @@ val list = listOf(13, 21, 3, 24, 55, 63, 77)
  val std = listOf(Student("supriya", 12), Student("navin", 23), Student("Saurabh", 11))
         val name = std.map { s-> s.name }
         println("SUP $name") //Output :- [supriya, navin, Saurabh]
-        
+         for(t in name) println("SUP $t") // Output:- supriya navin  Saurabh
 ```
 
 
