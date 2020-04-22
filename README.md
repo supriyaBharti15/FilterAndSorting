@@ -41,5 +41,6 @@ val list = listOf(13, 21, 3, 24, 55, 63, 77)
  val filteredName = std.filter { it -> it.name.startsWith('s') }.map { s -> s.name }
         for (t in filteredName) println("SUP $t") //Output:- supriya saurabh
 ```
+## predicate in kotlin:- all | any | count | find
 
 
