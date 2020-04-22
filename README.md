@@ -66,6 +66,30 @@ val list = listOf(13, 21, 3, 24, 55, 63, 77)
  var foundNum = dataList.find { it > 7 } // returns first greater than 7 number from the list
  println(foundNum) // output:- 8
 ```
+## problem with List
+- Functions such as map and filter creates list.
+- Fine if list are small.
+- Not good if list are massive.
+- instead use sequences.
+## sequences
+```kotlin
+class Student(var name: String, var id: Int)
+```
+```kotlin
+val student = listOf<Student>(Student("supriya", 12), Student("navin", 23), Student("saja", 45))
+var result = student.filter { println("FILTER $it"); it.name.startsWith('s') }
+            .map { println("MAP $it");it.name }
+ println(result)
+ 
+ //Log: for 3 value 3 timest FILTER and on filtered 2 data 2 times map run
+I/System.out: FILTER com.example.kotlinbasic.MainActivity$Student@c337130
+I/System.out: FILTER com.example.kotlinbasic.MainActivity$Student@98401a9
+I/System.out: FILTER com.example.kotlinbasic.MainActivity$Student@76c632e
+I/System.out: MAP com.example.kotlinbasic.MainActivity$Student@c337130
+I/System.out: MAP com.example.kotlinbasic.MainActivity$Student@76c632e
+I/System.out: [supriya, saja]
+```
+
 
 
 
