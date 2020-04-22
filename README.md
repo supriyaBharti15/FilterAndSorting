@@ -42,5 +42,30 @@ val list = listOf(13, 21, 3, 24, 55, 63, 77)
         for (t in filteredName) println("SUP $t") //Output:- supriya saurabh
 ```
 ## predicate in kotlin:- all | any | count | find
+```kotlin
+//Given List
+ val dataList = listOf<Int>(1, 4, 11,31, 21, 6, 8, 9)
+```
+## all
+```kotlin
+var resultData = dataList.all { it > 5 } // return boolean value
+ println(resultData) //output :- false (because all elements are not grater than 5)
+```
+## any
+```kotlin
+ resultData = dataList.any { it > 5 } // return boolean value
+ println(resultData) //output :- true (because any one or more item are grater than 5)
+```
+## count
+```kotlin
+  var countNum = dataList.count { it < 10 } // return total count Integer value
+  println(countNum) // output:- 5 {1,4,6,8,9 are smaller then 10 so total count will be 5}
+```
+## find
+```kotlin
+ var foundNum = dataList.find { it > 7 } // returns first greater than 7 number from the list
+ println(foundNum) // output:- 8
+```
+
 
 
