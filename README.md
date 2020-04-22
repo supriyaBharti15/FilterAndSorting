@@ -37,5 +37,9 @@ val list = listOf(13, 21, 3, 24, 55, 63, 77)
         println("SUP $name") //Output :- [supriya, navin, Saurabh]
          for(t in name) println("SUP $t") // Output:- supriya navin  Saurabh
 ```
+```kotlin
+ val filteredName = std.filter { it -> it.name.startsWith('s') }.map { s -> s.name }
+        for (t in filteredName) println("SUP $t") //Output:- supriya saurabh
+```
 
 
