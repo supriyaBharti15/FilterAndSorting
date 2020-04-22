@@ -25,4 +25,16 @@ val list = listOf(13, 21, 3, 24, 55, 63, 77)
   val squareFilter = list.map { it * it }.filter { it <30 }
   for (i in squareFilter) println("SUP $i")
 ```
+## map with class | how to use map to get data from class and do operation on that
+```kotlin
+//Class on which we will use map 
+ class Student(var name: String, var rollNo: Int) {}
+```
+```kotlin
+//1. operation
+ val std = listOf(Student("supriya", 12), Student("navin", 23), Student("Saurabh", 11))
+        val name = std.map { s-> s.name }
+        println("SUP $name") //Output :- [supriya, navin, Saurabh]
+```
+
 
